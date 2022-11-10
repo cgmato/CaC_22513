@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+.flotante {
+  /* display:scroll; */
+  display: none;
+  position:fixed;
+  bottom:20px;
+  right:0px;
+}
+
+#tope {
+  background: url("../images/imagentop.jpg") no-repeat 0 0;
+  background-size: 80%;
+  background-color: #14110c;
+  width: 100%;
+  height: 30vw;
+}
+
+#toptext {
+  float: right;
+  padding-right: 30px;
+  padding-top: 70px;
+}
+
+#logocont {
+  background-color: #000000;
+  width: 30%;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 20px;
+  float: left;
+}
+
+#toptext h1 {
+  color: #f7550b;
+  font-family: 'Pinyon Script';
+  font-size: 10vw;
+  font-weight: 400;
+}
+
+#toptext h5 {
+  color:#747474;
+}
+
+nav {
+  color:black;
+}
+
+#contmenu {
+  border-top: solid 2px #747474; margin-top: 0;
+}
+
+#menu {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  background-color: black;
+}
+
+#menu a {
+  padding: 10px;
+  text-decoration: none;
+  color:#82a476;
+}
+
+#menu a:hover {
+  color: antiquewhite;
+  background-color: #82a476;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Marca */
+
+.marcacontenedor {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(204, 202, 194);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+}
+
+section.marcacontenedor {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.marcacontenedor > div {
+  width: 33.33%;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.marcacontenedor p {
+  font-family: 'Wire One', sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+}
+
+/* Grid para productos */
+
+#nuestros-productos {
+  background-color: rgba(209, 206, 206, 0.5);
+  text-align: center;
+}
+
+#nuestros-productos h1 {
+  font-family: 'Amita', cursive;
+  font-weight: 400;
+  font-size: 3vmax;
+}
+
+#prodcontainer {
+  background: url("../images/fondo-productos.jpg") no-repeat fixed 0 0;
+  padding: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(360px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  background: rgba(240, 231, 215, 0.3);
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+  grid-template-columns: 150px 1fr;
+  padding: 1rem;
+  grid-gap: .5rem;
+}
+
+.grid-item h2 {
+  color: #eceae8;
+  font-family: 'Amita', cursive;
+  font-weight: 400;
+
+}
+
+.grid-item p {
+  color: #dbdfd7;
+  font-family: 'Wire One', sans-serif;
+  font-weight: 400;
+  font-size:30px;
+}
+
+.grid-item img {
+width: 100%;
+border-radius: 1rem;
+}
+
+#section-frase{
+  background: url("../images/campanas.jpg") no-repeat fixed 0 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+#section-frase div {
+  padding: 50px;
+  background-color: rgba(209, 206, 206, 0.5);
+  text-align: center;
+  color: #eceae8;
+  font-family: 'Amita', cursive;
+  font-size: 5vw;
+  font-weight: 400;
+
+}
+
+#formcontenedor{
+  background-color: #82a476;
+}
+
+.contacto-form{
+  text-align: center;
+  font-size: 33px
+}
+
+footer{
+  padding: 50px;
+  background-color: #14110c;
+}
+
+footer div {
+  color: rgb(255, 9, 9);
+}
+
+#pie{
+  text-align: center;
+  color: #eceae8;
+}
+
+.iconos a{
+  color: #ecb131;
+}
+
+.iconos a:hover{
+  color:#f7550b
+}
+
+#myTopnav nav{
+  float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  width: 70%;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 5vh;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #logocont {
+    float: none;
+    
+  }
+
+  #contmenu {
+    background-color:black;
+  }
+
+ #prodcontainer{
+  padding: 0;
+ }
+
+  .marcacontenedor {
+    display: block;
+    justify-content: center;
+    background-color: rgb(204, 202, 194);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  }
+
+  .marcacontenedor div, p{
+    width: 100%;
+    
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    
+    text-align: center;
+  }
+
+  .grid-item h2 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .topnav {
+    height: auto;
+    width: 100%;
+  }
+
+  .topnav a {
+    padding-top: 0;
+  }
+
+  #myTopnav nav{
+    float:none;
+  }
+
+  #toptext{
+    padding-top:30px;
+    }
+    
+  .grid-container {
+    display: block;
+  }
+
+
+}
+
+
+
+
+  
+
